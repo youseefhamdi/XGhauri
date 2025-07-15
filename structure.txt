@@ -1,23 +1,29 @@
 xghauri/
 ├── xghauri/
 │   ├── __init__.py
-│   ├── xss_core.py
-│   ├── analyzer.py
-│   ├── burp_importer.py
-│   ├── trainer.py
-│   ├── browser_engine.py
+│   ├── xss_core.py           # Main exploitation engine
+│   ├── analyzer.py           # Response analysis and detection
+│   ├── burp_importer.py      # Burp Suite integration
+│   ├── trainer.py            # AI/ML training and inference
+│   ├── browser_engine.py     # Browser automation
 │   └── utils/
 │       ├── __init__.py
-│       ├── payload_generator.py
-│       ├── report_generator.py
-│       └── config.py
+│       ├── payload_generator.py  # Payload creation and mutation
+│       ├── report_generator.py   # Output and reporting
+│       └── config.py             # Configuration management
 ├── payloads/
-│   ├── payloads.txt
-│   ├── waf_bypass.txt
-│   └── csp_evasion.txt
-├── reports/
+│   ├── payloads.txt          # Base payload database
+│   ├── waf_bypass.txt        # WAF-specific bypasses
+│   └── csp_evasion.txt       # CSP bypass techniques
+├── models/
+│   ├── payload_generator.pt  # Trained PyTorch models
+│   ├── response_analyzer.pt
+│   └── waf_classifier.pt
+├── reports/                  # Generated reports
 ├── config/
-│   └── config.yaml
-├── tests/
-├── requirements.txt
-└── setup.py
+│   ├── default.yaml         # Default configuration
+│   └── burp_integration.yaml
+├── tests/                   # Test suites
+├── main.py                  # CLI entry point
+├── requirements.txt         # Python dependencies
+└── setup.py                # Installation script
