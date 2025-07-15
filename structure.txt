@@ -1,0 +1,23 @@
+xghauri/
+├── xghauri/
+│   ├── __init__.py
+│   ├── xss_core.py
+│   ├── analyzer.py
+│   ├── burp_importer.py
+│   ├── trainer.py
+│   ├── browser_engine.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── payload_generator.py
+│       ├── report_generator.py
+│       └── config.py
+├── payloads/
+│   ├── payloads.txt
+│   ├── waf_bypass.txt
+│   └── csp_evasion.txt
+├── reports/
+├── config/
+│   └── config.yaml
+├── tests/
+├── requirements.txt
+└── setup.py
