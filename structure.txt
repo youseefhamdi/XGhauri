@@ -1,29 +1,35 @@
 xghauri/
-├── xghauri/
-│   ├── __init__.py
-│   ├── xss_core.py           # Main exploitation engine
-│   ├── analyzer.py           # Response analysis and detection
-│   ├── burp_importer.py      # Burp Suite integration
-│   ├── trainer.py            # AI/ML training and inference
-│   ├── browser_engine.py     # Browser automation
-│   └── utils/
-│       ├── __init__.py
-│       ├── payload_generator.py  # Payload creation and mutation
-│       ├── report_generator.py   # Output and reporting
-│       └── config.py             # Configuration management
+├── main.py                    # Main CLI entry point
+├── core/
+│   ├── xss_core.py           # Core XSS exploitation engine
+│   ├── scanner.py            # Scan orchestration
+│   └── __init__.py
+├── modules/
+│   ├── payload_generator.py  # Payload generation logic
+│   ├── response_analyzer.py  # Response analysis
+│   ├── context_analyzer.py   # Context detection
+│   ├── browser_verifier.py   # Browser-based verification
+│   └── waf_detector.py       # WAF detection and bypass
+├── ai/
+│   ├── trainer.py            # AI model training
+│   ├── models.py             # ML model definitions
+│   ├── reinforcement.py      # RL-based optimization
+│   └── data_processor.py     # Training data processing
+├── burp_integration/
+│   ├── burp_importer.py      # Burp Suite request import
+│   ├── burp_api.py           # Burp Suite API integration
+│   └── proxy_handler.py      # Proxy configuration
+├── utils/
+│   ├── logger.py             # Logging system
+│   ├── http_client.py        # HTTP client wrapper
+│   ├── crawler.py            # Web crawler
+│   ├── report_generator.py   # Report generation
+│   └── banner.py             # CLI banner
 ├── payloads/
 │   ├── payloads.txt          # Base payload database
-│   ├── waf_bypass.txt        # WAF-specific bypasses
-│   └── csp_evasion.txt       # CSP bypass techniques
-├── models/
-│   ├── payload_generator.pt  # Trained PyTorch models
-│   ├── response_analyzer.pt
-│   └── waf_classifier.pt
-├── reports/                  # Generated reports
+│   ├── context_payloads.json # Context-specific payloads
+│   └── bypass_payloads.json  # WAF bypass payloads
 ├── config/
-│   ├── default.yaml         # Default configuration
-│   └── burp_integration.yaml
-├── tests/                   # Test suites
-├── main.py                  # CLI entry point
-├── requirements.txt         # Python dependencies
-└── setup.py                # Installation script
+│   ├── settings.py           # Configuration management
+│   └── config.yaml           # Default configuration
+└── requirements.txt          # Python dependencies
